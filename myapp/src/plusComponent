@@ -1,0 +1,20 @@
+import React from 'react'
+
+function PlusComponent()
+{
+    const [increase,setIncrease]=React.useState(0)
+    const handleClick=()=>{
+    setIncrease(increase+1)
+        }
+    return(
+        <div className='pluscontainer' onClick={handleClick}>
+            <h2 className='plusObject'>{increase}</h2>
+        </div>
+    )
+      
+
+
+
+}
+
+export default PlusComponent
